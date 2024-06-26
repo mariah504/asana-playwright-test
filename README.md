@@ -1,14 +1,29 @@
-## Write-Up for Playwright Data-Driven Test Assignment
-
-   # Asana Playwright Data-Driven Tests
+# Asana Playwright Data-Driven Tests
 
 ## Overview
 This project demonstrates automated data-driven testing using Playwright and TypeScript. The tests are designed to automate the login process, navigate through different sections, and verify the presence of specific cards in Asana.
+
+## Table of Contents
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Tests](#running-the-tests)
+- [Project Structure](#project-structure)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Recommendations](#recommendations)
+- [Contact](#contact)
+- [License](#license)
 
 ## Features
 - **Automated Login**: Logs into Asana using provided credentials.
 - **Data-Driven Tests**: Reads test scenarios from a JSON object.
 - **Dynamic Locators**: Uses dynamic locators to interact with elements based on test data.
+
+## Prerequisites
+- Node.js (v14.x or higher)
+- npm (v6.x or higher)
 
 ## Installation
 
@@ -16,13 +31,30 @@ This project demonstrates automated data-driven testing using Playwright and Typ
    ```bash
    git clone https://github.com/mariah504/asana-playwright-tests.git
    cd asana-playwright-tests
+2. **Install dependencies:
+   -npm install
+3.)**Install Playwright browsers:
+   -npx playwright install
 
+## Running the Tests
+   -npm test
+## Project Structure
+
+asana-playwright-tests/
+├── tests/
+│   └── asana.test.ts
+├── playwright.config.ts
+├── package.json
+├── tsconfig.json
+└── README.md
 
 
 ### Challenges and Solutions
 
 **Challenge 1: Setting Up Playwright and TypeScript**
 - **Obstacle**: Initially encountered issues with setting up the Playwright and TypeScript environment, which included configuring the project structure, ensuring compatibility between various dependencies, and setting up the necessary configuration files.
+
+
 - **Solution**: I meticulously followed detailed setup instructions to initialize the project. This involved:
   - Running `npm init -y` to create a `package.json` file.
   - Installing the necessary dependencies using `npm install @playwright/test typescript ts-node @types/node`.
@@ -32,10 +64,14 @@ This project demonstrates automated data-driven testing using Playwright and Typ
 
 **Challenge 2: Browser Installation**
 - **Obstacle**: Encountered errors related to missing browser executables. The Playwright tests could not run because the required browser binaries were not installed, leading to repeated test failures.
+
+
 - **Solution**: To resolve this, I executed the command `npx playwright install`, which automatically downloaded and installed the necessary browser binaries (Chromium, Firefox, and WebKit). This ensured that all required browsers were available for the Playwright tests to execute correctly. This process showcased my problem-solving skills and my capacity to handle setup and environment configurations efficiently, which is crucial for automation roles. It also demonstrated my ability to quickly troubleshoot and resolve environment-related issues, ensuring smooth test execution.
 
 **Challenge 3: Debugging Test Failures**
 - **Obstacle**: Faced issues where tests were not running as expected. The tests would either fail to execute certain steps or produce incorrect results, making it difficult to identify the root causes of the problems.
+
+
 - **Solution**: I implemented a methodical approach to debug the test script by adding console logs at strategic points within each test step. This involved:
   - Adding logs before and after key actions, such as navigating to the login page, filling in credentials, clicking buttons, and verifying elements.
   - Using the logs to track the flow of execution and identify where the process was breaking down.
