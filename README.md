@@ -1,5 +1,24 @@
 ## Write-Up for Playwright Data-Driven Test Assignment
 
+   # Asana Playwright Data-Driven Tests
+
+## Overview
+This project demonstrates automated data-driven testing using Playwright and TypeScript. The tests are designed to automate the login process, navigate through different sections, and verify the presence of specific cards in Asana.
+
+## Features
+- **Automated Login**: Logs into Asana using provided credentials.
+- **Data-Driven Tests**: Reads test scenarios from a JSON object.
+- **Dynamic Locators**: Uses dynamic locators to interact with elements based on test data.
+
+## Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mariah504/asana-playwright-tests.git
+   cd asana-playwright-tests
+
+
+
 ### Challenges and Solutions
 
 **Challenge 1: Setting Up Playwright and TypeScript**
